@@ -1,0 +1,68 @@
+body, html {
+    background-color: #ff8566;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.pseudoContainer {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.writeContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.messageContainer {
+  width: 70%;
+  height: 300px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  color: #595959;
+  margin-top: 20px;
+  padding: 10px;
+  overflow:scroll;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+}
+
+#pseudo, #message {
+    width: 200px;
+    height: 45px;
+    font-size: 16px;
+    border:none;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#connectButton, #sendButton, #clearButton, #disconnectButton {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    background-color: #ff5c33;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.disconnectContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src = "main.js"></script>
+    <p class="welcome">Bonjour <span id="name"></span></p>
+</head>
+
+<body>
+<div id="chatbox" class="messageContainer"></div>
+<div id="writeBox" class="writeContainer">
+    <input id="message" placeholder="Tapez votre message..." type="text" maxlength="60" />
+    <input id="sendButton" type="submit" value="Envoyer" onclick="sendMessage()" />
+    <input id="clearButton" type="submit" value="Effacer" onclick="clearConversation()" />
+</div>
+<div id="disconnectDiv" class="disconnectContainer">
+    <input id="disconnectButton" type="submit" value="Quitter le chat" onclick="disconnect()" />
+</div>
+</body>
+
+<script type="text/javascript">
+    window.onload = function() {
+            document.getElementById("name").innerHTML = Interface.getUserName() + " !";
+            loadConversation();
+            scrollChatDiv();
+    };
+</script>
+</html>
